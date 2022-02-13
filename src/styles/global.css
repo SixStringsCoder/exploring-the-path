@@ -3,3 +3,66 @@ html {
   font-size: 16px;
   box-sizing: border-box;
 }
+
+section {
+  padding: 0 0 10px 0;
+}
+
+p, pre {
+  text-align: justify;
+  font-family: "Times";
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+
+p.foot-note {
+  font-size: 1rem;
+}
+
+.pali {
+  font-style: italic;
+}
+
+.pali-section {
+  margin: 0 10%;
+}
+
+pre.pali-indented {
+  margin: 0 50px 0;
+}
+
+span.ref-footnote {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Compare component */
+table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+  width: 100%;
+  margin: 0;
+}
+
+td, th {
+  padding: 1rem;
+  border: 1px solid gray;
+  font-size: 1.1rem
+}
+
+th {
+  text-align: center;
+  background: hsl(206, 51%, 84%);
+  font-weight: 700;
+}
+
+tr:nth-child(even) {
+  background: hsl(206, 51%, 95%);
+}
+
+tfoot td {
+  font-size: .8rem
+}

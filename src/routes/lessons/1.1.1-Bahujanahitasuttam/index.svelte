@@ -1,1 +1,5 @@
-<h1>TEST LESSON 1.1.1</h1>
+<script>	
+	import Sutta from './Sutta.svelte';
+</script>
+
+<Sutta />

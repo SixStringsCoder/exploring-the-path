@@ -28,11 +28,11 @@ footer {
   width: 100%;
   background-color: rgb(58, 56, 56);
   color: white;
-  text-align: center;
 }
 
 footer p {
   margin: 0;
   padding: 10px;
+  text-align: center;
 }
 </style>
