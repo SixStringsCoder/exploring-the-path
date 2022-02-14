@@ -6,7 +6,7 @@
 	let modalShowing = false;
 	
 	const getFootnote = (e) => {
-		const footnotes = suttaData[0].palivocab
+		const footnotes = suttaData[0].footnotes
 		console.log(footnotes[e.target.id].footnote)
 		footnote = footnotes[e.target.id].footnote
 		modalShowing = true

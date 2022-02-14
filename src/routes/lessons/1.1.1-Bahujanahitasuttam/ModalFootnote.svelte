@@ -5,7 +5,7 @@
 
 
 <!-- The Modal -->
-<div id="myModal" class="modal" transition:fade>
+<div id="myModal" class="modal" transition:fade={{duration: 100}}>
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close" on:click>&times;</span>

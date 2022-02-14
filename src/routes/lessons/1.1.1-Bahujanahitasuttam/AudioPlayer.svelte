@@ -4,7 +4,7 @@
 	
 	
 	let playerHidden = false;
-$: console.log(playerHidden)
+// $: console.log(playerHidden)
 </script>
 
 
