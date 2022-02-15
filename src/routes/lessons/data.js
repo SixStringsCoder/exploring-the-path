@@ -119,4 +119,16 @@ export const suttaData = [
 			}
 		}
 	}, // end 1.1.1 lesson
+	{
+		id: "1.2.0",
+		paliname: "Dullabho",
+		engname: "So Rare",
+		definition: "so rare",
+		intro: "",
+		engtrans: "",
+		palivocab: {},
+		paliaudio: "https://learning.pariyatti.org/pluginfile.php/404/mod_page/content/6/audio/02%201.2.0%20Dullabho.mp3",
+		sidebyside: [],
+		footnotes: {}
+	}
 ]

@@ -7,9 +7,9 @@
 
 <nav class="topnav" id="topNav">
     <a href="/" class="active">Home</a>
-    <a href="#contact">Study</a>
+    <a href="/lessons">Exploring the Path</a>
     <a href="#about">About</a>
-    <a href="#test" class="icon" onclick={() => console.log("TEST CLICK")}>
+    <a href="#test" class="icon">
       <i class="fa fa-bars"></i>
     </a>
     <a id="coursename">Exploring the ancient path in the Buddha’s own words</a>
