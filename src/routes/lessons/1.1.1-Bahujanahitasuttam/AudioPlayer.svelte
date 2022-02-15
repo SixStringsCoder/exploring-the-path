@@ -2,7 +2,7 @@
 	import { fly } from 'svelte/transition';
   let y = 0;
 	
-	
+	let audioLink = "https://learning.pariyatti.org/pluginfile.php/183/mod_page/content/4/audio/01%201.1.1%20Bahujanahitasutta.mp3"
 	let playerHidden = false;
 // $: console.log(playerHidden)
 </script>
@@ -15,7 +15,7 @@
 				 transition:fly={{ y: 200, duration: 500 }}>	
 	
 	<audio controls class:hide={playerHidden}>
-		<source src="https://learning.pariyatti.org/pluginfile.php/183/mod_page/content/4/audio/01%201.1.1%20Bahujanahitasutta.mp3" type="audio/mp3">
+		<source src={audioLink} type="audio/mp3">
 	Your browser does not support the audio element.
 	</audio>
 	

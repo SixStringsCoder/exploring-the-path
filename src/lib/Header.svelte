@@ -5,7 +5,7 @@
 	export let meaning;
 	export let hiLiteSel;
 	
-	const lessonLinks = ["Introduction", "English", "Pali", "Compare"];
+	const lessonLinks = ["Introduction", "English", "Pali", "Compare", "Flashcards"];
 </script>
 
 

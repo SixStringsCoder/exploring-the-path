@@ -1,10 +1,11 @@
 <script>
 	import { suttaData } from '../data.js'
-	import Header from './Header.svelte'
+	import Header from '$lib/Header.svelte'
 	import Introduction from './Introduction.svelte'
 	import English from './English.svelte'
 	import Compare from './Compare.svelte'
 	import Pali from './Pali.svelte'
+	import Flashcards from './Flashcards.svelte'
 	import AudioPlayer from './AudioPlayer.svelte';
 	
 	// Loads the ETP lesson
@@ -16,7 +17,8 @@
 		{ name: "Introduction", component: Introduction },
 		{ name: "English", component: English },
 		{ name: "Pali", component: Pali },
-		{ name: "Compare", component: Compare}
+		{ name: "Compare", component: Compare},
+		{ name: "Flashcards", component: Flashcards}
 	];
 	
 	let selectedPage = webpages[0];
