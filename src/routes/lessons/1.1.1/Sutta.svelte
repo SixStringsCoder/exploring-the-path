@@ -40,7 +40,7 @@
 
 <section>
 	{#if selectBtn === "Pali" || selectBtn === "Compare"}
-		<AudioPlayer />
+		<AudioPlayer audioLink={selectedSutta.paliaudio} />
 	{/if}
 	
 	<svelte:component this={selectedPage.component} />

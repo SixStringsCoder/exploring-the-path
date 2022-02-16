@@ -4,6 +4,7 @@ export const suttaData = [
 		paliname: "Bahujanahitasuttaṃ",
 		engname: "For the Benefit of Many",
 		definition: "Bahujanahitasuttaṃ: bahu+jana+hita—many + people + benefit, welfare",
+		blurb: "The first part of this collection endeavors to point out the rarity of something that seems far too natural: That in the present period of existence we as human beings are able to encounter the magnificent result-oriented and beneficial teaching of the Enlightened One.",
 		intro: `
 		<p class="english-para">The first part of this collection endeavors to point out the rarity of something that seems far too natural: That in the present period of existence we as human beings are able to encounter the magnificent result oriented and beneficial teaching of the Enlightened One. While aeons after aeons pass in darkness, we encounter a remedy not only on the level of theoretical understanding and philosophical satisfaction but also as a real and applicable practice through the gem that is so generously presented in Vipassana.</p> 
 		<p class="english-para">When the inherent qualities of Dhamma mature within one who walks on the path as described by the Buddha, especially the quality of <span class="pali">ehipassiko</span> manifests itself along with the zeal of sharing with many the benefits and the merits one has gained.</p> 
@@ -124,7 +125,14 @@ export const suttaData = [
 		paliname: "Dullabho",
 		engname: "So Rare",
 		definition: "so rare",
-		intro: "",
+		blurb: "This chapter presents texts that indicate how rare it is, to encounter the teaching of the Enlightened One, to hear the Dhamma and being able because of this to walk the path as so generously laid out by the Buddha.",
+		intro: `
+		<p class="english-para">The <span class="pali">Dhammapada</span> expresses in its 432 verses succinctly the essence of the Buddha’s teaching in linguistic and poetical splendour.</p> 
+		<p class="english-para">This verse, the fourth of the <span class="pali">Buddhavaggo</span> was uttered by the Buddha to ease the despair of a king of dragons by the name of <span class="pali">Erakapatta</span>. This king had once in his previous life, in spite of persistent and unblemished efforts in his meditation neglectfully broken a leaf of the Erakatree (hence his name: <span class="pali">eraka</span> – patta: leaf) when passing by boat on a river, but considering it a mere trifle* he was therefore reborn as <span class="pali">Erakapatta</span>. Waiting during the entire, everlasting period of one Buddha for the next to arise, he asked his beautiful daughter to dance and sing every fortnight on uposatha-days. He was in this way presenting his daughter to any suitor, who would give the proper reply to a riddle she was singing – knowing that this riddle could only be solved by someone who had encountered the teaching of the Buddha.</p> 
+		<p class="english-para">Finally, after the appearance of <span class="pali">Siddhattha</span>, the Brahmin <span class="pali">Uttara</span> learned the correct replies to the riddle from the Buddha, was successful in his courtship and gained the bride. Full of inspiration, knowing that the next Buddha had now appeared <span class="pali">Erakapatta</span> went to Siddhattha and weepingly expressed his sadness that he had to wait so enduringly long for the next Buddha to appear. The Buddha tried to soothe him by stating the facts expressed in this stanza.</p>
+		<p class="english-para">This chapter presents texts that indicate how rare it is, to encounter the teaching of the Enlightened One, to hear the Dhamma and being able because of this to walk the path as so generously laid out by the Buddha.</p>
+		<p class="english-para">Therefore these lovely lines are chosen as introductionary verses, introducing the language of the <span class="pali">Dhammapada</span>.</p>
+		`,
 		engtrans: "",
 		palivocab: {},
 		paliaudio: "https://learning.pariyatti.org/pluginfile.php/404/mod_page/content/6/audio/02%201.2.0%20Dullabho.mp3",

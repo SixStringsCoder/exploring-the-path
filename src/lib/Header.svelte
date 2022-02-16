@@ -18,13 +18,13 @@
 	<h2>{engname}</h2>	
 	
 	<nav>
-  {#each lessonLinks as linkName, i}
-		<button title={linkName}	
-						data-index={i} 
-						class:highlight={linkName === hiLiteSel}
-						on:click>{linkName}</button>
-	{/each}
-</nav>
+		{#each lessonLinks as linkName, i}
+			<button title={linkName}	
+							data-index={i} 
+							class:highlight={linkName === hiLiteSel}
+							on:click>{linkName}</button>
+		{/each}
+	</nav>
 </header>	
 
 

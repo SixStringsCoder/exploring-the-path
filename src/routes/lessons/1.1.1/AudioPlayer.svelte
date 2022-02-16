@@ -2,7 +2,7 @@
 	import { fly } from 'svelte/transition';
   let y = 0;
 	
-	let audioLink = "https://learning.pariyatti.org/pluginfile.php/183/mod_page/content/4/audio/01%201.1.1%20Bahujanahitasutta.mp3"
+	export let audioLink;
 	let playerHidden = false;
 // $: console.log(playerHidden)
 </script>
@@ -10,8 +10,7 @@
 
 <svelte:window bind:scrollY={y} />
 
-<section class:fixed={y >= 250}
-				 
+<section class:fixed={y >= 250}				 
 				 transition:fly={{ y: 200, duration: 500 }}>	
 	
 	<audio controls class:hide={playerHidden}>
