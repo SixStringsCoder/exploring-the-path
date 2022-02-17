@@ -1,8 +1,8 @@
 <script>
-	import { suttaData } from '../data.js'
+	import { suttaData } from '../data.js';
 
 	let index = 0;
-	let sidebysideData = suttaData[index].sidebyside
+	let sidebysideData = suttaData[index].sidebyside;
 </script>
 <!-- <svelte:head><link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"></svelte:head> -->
 
@@ -16,10 +16,10 @@
     </thead>
 	<tbody>
 		{#each sidebysideData as row}
-		<tr>
-			<td>{row.pali}</td>
-			<td>{row.english}</td>
-		</tr>
+			<tr>
+				<td>{row.pali}</td>
+				<td>{row.english}</td>
+			</tr>
 		{/each}
 	</tbody>
 	<tfoot>

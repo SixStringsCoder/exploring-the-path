@@ -134,6 +134,7 @@ export const suttaData = [
 		<p class="english-para">Therefore these lovely lines are chosen as introductionary verses, introducing the language of the <span class="pali">Dhammapada</span>.</p>
 		`,
 		engtrans: "",
+		pali: "",
 		palivocab: {},
 		paliaudio: "https://learning.pariyatti.org/pluginfile.php/404/mod_page/content/6/audio/02%201.2.0%20Dullabho.mp3",
 		sidebyside: [],
