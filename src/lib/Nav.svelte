@@ -2,10 +2,6 @@
   import { fly } from 'svelte/transition'
   import { suttaData } from '../routes/exploring-the-path/data.js';
   const url = "http://localhost:3000/exploring-the-path/"
-  // import SideNav from './SideNav.svelte'
-
-  // let navWidth = 0;
-  // const handleNav = () => isOpen ? navWidth === 200 : navWidth === 0 ;
 
   let isOpen = false;
 
@@ -36,8 +32,6 @@
 {/if}
 
   
-
-
 
 <style>
   nav {
