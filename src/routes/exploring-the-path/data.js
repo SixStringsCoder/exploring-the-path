@@ -3,7 +3,7 @@ export const suttaData = [
 		id: "1.1.1",
 		paliname: "Bahujanahitasuttaṃ",
 		engname: "For the Benefit of Many",
-		definition: "Bahujanahitasuttaṃ: bahu+jana+hita—many + people + benefit, welfare",
+		definition: "bahu+jana+hita—many + people + benefit, welfare",
 		blurb: "The first part of this collection endeavors to point out the rarity of something that seems far too natural: That in the present period of existence we as human beings are able to encounter the magnificent result-oriented and beneficial teaching of the Enlightened One.",
 		intro: `
 		<p class="english-para">The first part of this collection endeavors to point out the rarity of something that seems far too natural: That in the present period of existence we as human beings are able to encounter the magnificent result oriented and beneficial teaching of the Enlightened One. While aeons after aeons pass in darkness, we encounter a remedy not only on the level of theoretical understanding and philosophical satisfaction but also as a real and applicable practice through the gem that is so generously presented in Vipassana.</p> 

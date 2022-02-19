@@ -50,6 +50,5 @@
 <style>
 	section {
 		padding: 0 0 10px 0;
-		min-height: calc(100vh - 256px);
 	}
 </style>

@@ -1,6 +1,6 @@
 <script>
   import { suttaData } from './data.js'
-  const url = "http://localhost:3000/lessons/"
+  const url = "http://localhost:3000/exploring-the-path/"
 
   const loadLesson =(e) => window.open(`${url}${e.target.value}`, '_self')
 </script>

@@ -66,16 +66,6 @@
 		margin: 10px 0 0 0 ;
 		padding: 0;
 	}
-	button {
-		border: none;
-    border-radius: 5px;
-    background: #ba5626;
-    font-size: 1rem;
-    color: white;
-    width: 105px;
-		margin: 0 10px;
-		cursor: pointer;
-	}
 	
 	.highlight {
 		background: #1372BA;
