@@ -2,6 +2,10 @@
   <title>Exploring the Path</title>
 </svelte:head>
 
+<header>
+  <h1>Exploring the ancient path in the Buddha’s own words</h1>
+</header>
+
 <main class="summary"><div class="no-overflow"> 
   <p>Welcome to <span style="font-weight: bold; font-style: italic;">Exploring the sacred, ancient path in the original words of the Buddha</span> (Exploring the Path).
   </p>
@@ -24,14 +28,31 @@
   </p>
 </main>
 
-<section class="lesson-list">
-  <h2>Lessons List with lesson title and synopsis</h2>
+<section class="lessons-btn-cont">
+  <a href="/exploring-the-path">
+    <button>
+      View All Lessons
+    </button>
+  </a>
 </section>
 
 
+
 <style>
+  header {
+    text-align: center;
+  }
   main {
     margin: 2% 5%;
     font-size: 1.4rem;
+  }
+
+  .lessons-btn-cont {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    width: 130px
   }
 </style>

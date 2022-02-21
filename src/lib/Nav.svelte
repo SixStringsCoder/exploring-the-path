@@ -12,13 +12,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <nav class="topnav" id="topNav">
-  <a href="/" class="active">Home</a>
-  <a href="/exploring-the-path">Exploring the Path</a>
-  <a href="#buddasahasanamavali">Buddasahasanamavali</a>
-  <a href="#test" class="icon" >
-    <i class="fa fa-bars" on:click={() => isOpen = true}></i>
-  </a>
-  <a id="coursename">Exploring the ancient path in the Buddha’s own words</a>
+  <div>
+    <a href="/" class="active">Home</a>
+    <a href="/exploring-the-path">Exploring the Path</a>
+  </div>
+  <div>
+    <a href="#hamburger" class="icon" >
+      <i class="fa fa-bars" on:click={() => isOpen = true}></i>
+    </a>
+  </div>
 </nav>
 
 
@@ -66,16 +68,17 @@
   }
 
   .topnav .icon {
-    display: none;
+    display: block;
+    float: right;
   }
 
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
-  }
+  } */
 
 
 /* The side navigation menu */
@@ -116,11 +119,6 @@
     font-size: 36px;
   }
 
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
 
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
