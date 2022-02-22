@@ -1,3 +1,8 @@
+<script>
+    import { suttaData } from './exploring-the-path/data.js'
+    const url = "http://localhost:3000/exploring-the-path/"
+</script>
+
 <svelte:head>
   <title>Exploring the Path</title>
 </svelte:head>
@@ -28,14 +33,18 @@
   </p>
 </main>
 
-<section class="lessons-btn-cont">
-  <a href="/exploring-the-path">
-    <button>
-      View All Lessons
-    </button>
-  </a>
-</section>
+<hr />
 
+<h1>Overview of the lessons</h1>
+<section id="lesson-cards">
+  {#each suttaData as suttaObj, i}
+    <div class="card">
+      <h3>{`${suttaObj.id} ${suttaObj.paliname}`}</h3>
+      <p>{suttaObj.blurb}</p>
+      <a href={`${url}${suttaObj.id}`}><button id={`${i}`}>Go to Lesson</button></a>
+    </div>
+  {/each}
+</section>
 
 
 <style>
@@ -54,5 +63,35 @@
 
   button {
     width: 130px
+  }
+
+  section#lesson-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .card {
+    width: 80%;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 65%);
+    padding: 16px;
+    text-align: center;
+    background-color: hsl(39, 37%, 85%);
+    border-radius: 15px;
+  }
+
+  h3 {
+    margin: 5px 0;
+  }
+
+  p {
+    margin: 8px;
   }
 </style>
