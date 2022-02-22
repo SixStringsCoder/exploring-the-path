@@ -18,6 +18,10 @@ p, pre {
   padding: 0 10px;
 }
 
+p.english-para {
+  text-indent: 20px
+}
+
 pre {
   padding: 0;
 }

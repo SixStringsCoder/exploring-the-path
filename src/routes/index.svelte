@@ -40,6 +40,7 @@
   {#each suttaData as suttaObj, i}
     <div class="card">
       <h3>{`${suttaObj.id} ${suttaObj.paliname}`}</h3>
+      <h3>({`${suttaObj.engname}`})</h3>
       <p>{suttaObj.blurb}</p>
       <a href={`${url}${suttaObj.id}`}><button id={`${i}`}>Go to Lesson</button></a>
     </div>
@@ -52,17 +53,8 @@
     text-align: center;
   }
   main {
-    margin: 2% 5%;
+    margin: 2% 5% 30px;
     font-size: 1.4rem;
-  }
-
-  .lessons-btn-cont {
-    display: flex;
-    justify-content: center;
-  }
-
-  button {
-    width: 130px
   }
 
   section#lesson-cards {

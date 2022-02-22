@@ -16,19 +16,21 @@
     <a href="/" class="active">Home</a>
     <a href="/exploring-the-path">Exploring the Path</a>
   </div>
-  <div>
-    <a href="#hamburger" class="icon" >
-      <i class="fa fa-bars" on:click={() => isOpen = true}></i>
+  <div id="menu-cont" on:click={() => isOpen = true}>
+    <a href="#menu" class="icon" >
+      <i class="fa fa-bars"></i>
     </a>
   </div>
 </nav>
 
 
 {#if isOpen}
-  <div id="sidenav" class="sidenav" transition:fly={{x: 300}}>
+  <div id="sidenav" class="sidenav" transition:fly={{x: 500}}>
     <a href="#navfauxlink" class="closebtn" on:click={() => isOpen = false}>&times;</a>
     {#each suttaData as suttaObj}
-      <a href={`${url}${suttaObj.id}`}>{suttaObj.id} {suttaObj.engname}</a>
+      <a on:click={() => isOpen = false} href={`${url}${suttaObj.id}`}>
+        {suttaObj.id} {suttaObj.engname}
+      </a>
     {/each}
   </div>
 {/if}
@@ -106,12 +108,10 @@
     transition: 0.3s;
   }
 
-  /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #f1f1f1;
   }
 
-  /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
     position: absolute;
     top: 0;
