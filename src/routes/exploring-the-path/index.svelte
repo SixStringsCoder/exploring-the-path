@@ -119,6 +119,5 @@
 
   p {
     margin: 8px;
-    text-indent: 20px;
   }
 </style>
