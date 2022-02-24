@@ -4,6 +4,9 @@
   const url = "http://localhost:3000/exploring-the-path/"
 
   let isOpen = false;
+  let subNavOpen = false;
+
+  const handleSubNav = () => subNavOpen ? subNavOpen = false : subNavOpen = true 
 
 // $:console.log(url)  
 </script>
@@ -16,23 +19,38 @@
   </div>
   <div id="menu-cont" on:click={() => isOpen = true}>
     <a href="#menu" class="icon" >
-      <i class="fa fa-bars"></i>
+      &#9776; 
     </a>
   </div>
 </nav>
 
 
 {#if isOpen}
-  <div id="sidenav" class="sidenav" transition:fly={{x: 500}}>
+  <section id="sidenav" class="sidenav" transition:fly={{x: 500}}>
     <a href="#navfauxlink" class="closebtn" on:click={() => isOpen = false}>&times;</a>
-    {#each suttaData as suttaObj}
-      <a on:click={() => isOpen = false} href={`${url}${suttaObj.id}`}>
-        {suttaObj.id} {suttaObj.engname}
-      </a>
-    {/each}
-  </div>
-{/if}
+   
+    <button class="dropdown-btn">Intro to Pali
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container" id="intro-to-pali"></div>
 
+    <button class="dropdown-btn" on:click={handleSubNav}>Exploring the Path
+      <i class="fa fa-caret-down" class:fa-caret-up={subNavOpen}></i>
+    </button>
+    <div class="dropdown-container" id="exploring-the-path" class:show-submenu={subNavOpen} >
+      {#each suttaData as suttaObj}
+        <a on:click={() => isOpen = false} href={`${url}${suttaObj.id}`}>
+          {suttaObj.id} {suttaObj.engname}
+        </a>
+      {/each}
+    </div>
+
+    <button class="dropdown-btn">Buddhasahassanāmāvali
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container" id="buddhasahassanamavali"></div>
+  </section>
+{/if}
   
 
 <style>
@@ -82,7 +100,7 @@
 
 
 /* The side navigation menu */
-  div.sidenav {
+section.sidenav {
     height: 100%; /* 100% Full-height */
     width: 300px;
     position: fixed; /* Stay in place */
@@ -96,21 +114,53 @@
   }
 
   /* The navigation menu links */
-  div.sidenav a {
+  section.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 1.1rem;
-    color: #818181;
+    color: #f1f1f1;
     display: block;
     cursor: pointer;
     transition: 0.3s;
   }
 
-  .sidenav a:hover {
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  /* On mouse-over */
+  .sidenav a:hover, 
+  .dropdown-btn:hover {
     color: #f1f1f1;
   }
 
-  .sidenav .closebtn {
+  .dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+  }
+
+  .show-submenu {
+    display: block;
+  }
+
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
+  section.sidenav .closebtn {
     position: absolute;
     top: 0;
     left: 0;
@@ -120,8 +170,8 @@
 
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    section.sidenav {padding-top: 15px;}
+    section.sidenav a {font-size: 18px;}
   } 
 
 </style>

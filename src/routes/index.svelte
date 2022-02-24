@@ -18,7 +18,7 @@
         descr: "The renowned meditation teacher S.N. Goenka composed and chanted verses to express his gratitude and devotion towards the Buddha—verses called Buddhasahassanāmāvalī. This course uses these verses as a basis for learning Pāli.",
         subdir: "buddhasahassanamavali"
        }
-    ]
+    ];
 </script>
 
 <svelte:head>
@@ -50,7 +50,6 @@
 
 
 <style>
-
   main {
     margin: 2% 5% 30px;
     font-size: 1.4rem;

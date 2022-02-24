@@ -11,7 +11,7 @@
 </svelte:head>
 
 <header>
-  <h1>Exploring the ancient path in the Buddha’s own words</h1>
+  <h1>Exploring the Path</h1>
 </header>
 
 <main class="summary">
@@ -75,11 +75,6 @@
   main {
     margin: 2% 5% 30px;
     font-size: 1.4rem;
-  }
-
-  h1 {
-    text-align: center;
-    margin: 5px 0;
   }
   
   section#lesson-menu {
