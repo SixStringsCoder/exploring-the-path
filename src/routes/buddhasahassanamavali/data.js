@@ -54,8 +54,8 @@ export const versesData = [
     Teacher of gods and men alike.  
 `,
     vocabulary: [ 
-      { word: "purisadammasārathī", definition: "trainer of men (purisa+damma+sārathī men+trainer+charioteer)" },
-      { word: "lokavidū anuttaro", definition: "incomparable knower of all the worlds (loka+vidū+anuttaro world/universe+knowing+incomparable/unrivalled)" },
+      { word: "purisadammasārathī", definition: "trainer of men (purisa + damma + sārathī men + trainer + charioteer)" },
+      { word: "lokavidū anuttaro", definition: "incomparable knower of all the worlds (loka + vidū+anuttaro world/universe + knowing+incomparable/unrivalled)" },
       { word: "vsatthā devamanussānaṃ", definition: "teacher of gods and men alike" },
     ],
     quizletID: "193190108",
