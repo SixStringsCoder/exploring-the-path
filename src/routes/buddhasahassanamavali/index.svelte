@@ -6,9 +6,8 @@
       Gratitude Verses to the Buddha
     </h3>
 
-    <div class="summary">
-        <div class="no-overflow">
-            <div style="font-family: Tahoma, sans-serif;">
+    <section class="summary">
+            <div class="intro-cont">
                 <!--Intro by Klaus Nothnagel-->
                 <h3 style="text-align: center;">Introduction</h3>
                 <p>
@@ -40,8 +39,7 @@
 
                 <hr />
             </div>
-        </div>
-    </div>
+        </section>
 
     <ul class="section img-text">
         <li class="activity page modtype_page" id="module-986">
@@ -72,5 +70,43 @@
                 </div>
             </div>
         </li>
+        <li class="activity page modtype_page" id="module-989">
+            <div>
+                <div class="mod-indent-outer">
+                    <div class="mod-indent"></div>
+                    <div>
+                        <div class="activityinstance">
+                            <a href="buddhasahassanamavali/Verse">
+                                <span class="instancename">View All Verses</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
     </ul>
+
+
 </main>
+
+
+<style>
+  div.intro-cont {
+      padding: 20px;
+  }  
+
+  p {
+      line-height: 130%;
+  }
+
+  ul {
+      margin: 0 0 20px 0
+  }
+
+  li {
+      font-size: 1.2rem;
+      line-height: 150%;
+      margin-left: 20px
+  }
+
+</style>
