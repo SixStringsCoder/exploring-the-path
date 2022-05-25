@@ -32,7 +32,7 @@
     <button class="dropdown-btn">Intro to Pali
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-container" id="intro-to-pali"></div>
+    <div class="dropdown-container" id="intro-to-pali">Content for Intro to Pali</div>
 
     <button class="dropdown-btn" on:click={handleSubNav}>Exploring the Path
       <i class="fa fa-caret-down" class:fa-caret-up={subNavOpen}></i>
