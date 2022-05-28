@@ -10,11 +10,11 @@
 
 
 <header>
-	<p class="pali">
+	<p class="namo-tassa">
 		Namo tassa bhagavato arahato sammāsambuddhassa
 	</p>
-	<h3>Lesson {id}</h3>
-	<h1 title={meaning}>{paliname}</h1>
+	<h1 title={meaning}>Lesson {id}<br />
+			<strong>{paliname}</strong></h1>
 	<h2>{engname}</h2>	
 	
 	<nav>
@@ -43,7 +43,7 @@
 		margin: 5px;
 	}
 	
-	h1 {
+	/* h1 {
 		font-size: 1.4rem
 	}
 	h2 {
@@ -51,16 +51,7 @@
 	}
 	h3 {
 		font-size: 1rem
-	}
-	
-	p {
-		margin: 0;
-	}
-	
-	.pali {
-		font-style: italic;
-		font-size: .8rem
-	}
+	} */
 	
 	nav {
 		margin: 10px 0 0 0 ;

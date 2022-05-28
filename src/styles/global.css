@@ -5,7 +5,9 @@ html, body {
   box-sizing: border-box;
   min-height: 100%;
   position: relative;
-  background-color: #F6F2ED;
+  background-color: #f9f9f9;
+ font-family: 'Noto Serif', serif;
+  color: #222;
 }
 
 section {
@@ -16,18 +18,25 @@ section {
   margin: 0 5%;
 }
 
+p.namo-tassa {
+  font-style: italic;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
 h1 {
-  font-size: 2.8rem;
+  font-size: 1.4rem;
   margin-top: 3rem;
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 1.2rem;
   margin-top: 3rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1rem;
   margin-top: 3rem;
 }
 
@@ -48,81 +57,73 @@ h1, h2, h3, h4, h5, h6 {
   margin: 15px 0;
 }
 
+
 a {
   color: #BD5F33;
 }
 
 hr {
-  width: 85%;
+  margin: 50px auto;
+	width: 90vw;
   border: 1px solid black;
 }
 
-p, pre {
+p, pre, blockquote {
   text-align: justify;
   font-family: "Times";
   font-size: 1.2rem;
   padding: 0 10px;
-}
-
-p {
-  text-indent: 20px;
   line-height: 125%;
+  margin: 5px 0;
 }
 
 pre {
-  padding: 0;
-}
-
-p.foot-note {
-  font-size: 1rem;
+  margin-bottom: -20px;
+  white-space: pre-wrap; /* css-3 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 .pali {
   font-style: italic;
+	color: #2c8898; /* DarkOliveGreen */
 }
 
-.pali-section {
-  margin: 0 10%;
+.indent {
+  text-indent: 40px;
+ }
+ 
+ .indentx2 {
+ text-indent: 80px;
+ }
+
+.footnotes {
+	width: 85%;
+	margin: 0;
+	text-align: justify;
+}
+.footnotes :target {
+  background-color: lightgray;
+  padding: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 6px black;
 }
 
-pre.pali-indented {
-  /* margin: 0 50px 0; */
+.footnotes ol li {
+	font-size: 14px; 
+	margin-bottom: 7px;
+	line-height: 140%;
+}
+sup { 
+	font-size: 12px;
+	margin: 0 2px 0 2px;
 }
 
-span.ref-footnote {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-/* Compare component */
-table {
-  border-collapse: collapse;
-  box-sizing: border-box;
-  text-indent: initial;
-  border-spacing: 2px;
-  border-color: grey;
-  width: 100%;
-  margin: 0;
-}
-
-td, th {
-  padding: 1rem;
-  border: 1px solid gray;
-  font-size: 1.1rem
-}
-
-th {
-  text-align: center;
-  background: hsl(206, 51%, 84%);
-  font-weight: 700;
-}
-
-tr:nth-child(even) {
-  background: hsl(206, 51%, 95%);
-}
-
-tfoot td {
-  font-size: .8rem
+.pali-content-container :target,
+.intro-content-container :target {
+  background-color: cornsilk;
 }
 
 button {
