@@ -127,78 +127,20 @@
 </footer>
 
 <style>
-body {
-		font-family: 'Noto Serif', serif;
-		background: #f9f9f9;
-		color: #222;
-		font-size: 1rem;
-	}
-	
-	
-	.indent {
-	 text-indent: 40px;
-	}
-	
-	.indentx2 {
-	text-indent: 80px;
-	}
-	
-	.center-text {
-	text-align: center
-	}
-	
-	a {
-	color: #2c8898;
-	}
-	
-	a:hover, a:active {
-	color: #4D4612;
-	}
-	
-	.intro-content-container {
-	margin: 0 3vw;
-	}
-	
-	.center {
-	display: flex;
-	justify-content: center;
-	}
-	
-	.center-verses {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	}
-	
-	.attribution {
-		text-align: right;
-		font-size: .8rem;
-		margin-bottom: 20px;
-	}
-	
-	.justified-indented-quote {
-	margin: 10px 12%;
-	text-align: justify;
-	}
-	
-
-	
-	
 	/* FOOTER - AUDIO and PDF DOWNLOADS */
 	
-	.etp-download-btns {
+.etp-download-btns {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	}
-	.btn-pdf {
+}
+.btn-pdf {
 	width: 200px;
 	padding: 6px 12px;
 	border-radius: 20px;
 	box-shadow: 1px 1px 2px grey;
 	background-color: #ddd;
 	border-color: #adadad;
-	}
-	
+}	
 </style>
