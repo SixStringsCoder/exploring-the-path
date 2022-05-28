@@ -14,8 +14,7 @@
 
 <nav class="topnav" id="topNav">
   <div>
-    <a href="/" class="active">Home</a>
-    <a href="/exploring-the-path">Exploring the Path</a>
+    <a href="/exploring-the-path"><h1>Exploring the Path</h1></a>
   </div>
   <div id="menu-cont" on:click={() => isOpen = true}>
     <a href="#menu" class="icon" >
@@ -66,7 +65,6 @@
   }
 
   .topnav a {
-    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -80,9 +78,8 @@
     color: black;
   }
 
-  .topnav a.active {
-    background-color: #ba5626;
-    color: white;
+  h1 {
+    margin: 0;
   }
 
   .topnav .icon {
